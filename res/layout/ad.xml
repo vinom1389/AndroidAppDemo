@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+    
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        
+      <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>        
+      <EditText
+        android:id="@+id/editText_phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PhoneNo"
+        android:ems="10"
+        android:inputType="phone" >    
+          </EditText>
+    </TableRow>
+
+ <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+          <Spinner
+        android:id="@+id/spinner1"
+        android:entries="@array/type_arrays"
+        android:prompt="@string/whisetype" />
+             <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/type_arrays"
+        android:prompt="@string/whisetype" />
+                <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/type_arrays"
+        android:prompt="@string/whisetype" />
+       </TableRow>    
+</TableLayout>
